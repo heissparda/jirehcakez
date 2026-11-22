@@ -72,10 +72,8 @@ footer{text-align:center;padding:20px;color:#999;font-size:12px;padding-bottom:3
 </div>
 <h2>Our Packages — Perfect For All Occasions</h2>
 <div class="menu" id="menuBox"></div>
-
 <h2>Party Packs & Extras — For Bulk Orders</h2>
 <div class="menu" id="extraBox"></div>
-
 <div class="train" id="train">
 <h3>🎓 Learn & Earn With Jireh</h3>
 <p>We have trained 1,300+ online students and 150 in-person students. You can learn too and start your own baking business.</p>
@@ -126,9 +124,11 @@ box.innerHTML+=`<div class="card"><div class="food">${foodDisplay}</div><h3>${f[
 const extras=[
 ["🍗","PARTY PACK - WITH CHICKEN","₦3,000 per plate","Minimum Order: 10 Plates|Small Chops Plate with Peppered Chicken|Perfect for Parties, Church & Events","party3000.jpg","I want Party Pack with Chicken for N3000 per plate - Min 10 plates"],
 ["🥩","PARTY PACK - WITH BEEF","₦2,000 per plate","Minimum Order: 10 Plates|Small Chops Plate with Beef|Perfect for Parties, Church & Events","party2000.jpg","I want Party Pack with Beef for N2000 per plate - Min 10 plates"],
-["🍩","BOX OF 100 MILKY PUFF PUFF","₦13,000","100 Balls Milky Puff Puff|Soft, Milky & Sweet|Perfect for Parties & Sharing","puff13000.jpg","I want Box of 100 Milky Puff Puff for N13000"]
+["🍩","BOX OF 100 MILKY PUFF PUFF","₦13,000","100 Balls Milky Puff Puff|Soft, Milky & Sweet|Perfect for Parties & Sharing","puff13000.jpg","I want Box of 100 Milky Puff Puff for N13000"],
+["🧃","JIREH FRUITY ZOBO","₦600 - ₦1,000","35cl — ₦600|50cl — ₦1,000|Fresh, Natural & Refreshing|Fruity Zobo, Perfect With Small Chops","zobo.jpg","I want Jireh Fruity Zobo - 35cl for N600 or 50cl for N1000"],
+["🍪","JIREH CHIN CHIN","₦2,500 - ₦25,000","4L Bucket — ₦25,000|2L Bucket — ₦12,800|1L Jar — ₦6,500|Medium Pouch — ₦3,700|Small Pouch — ₦2,500|Crunchy, Tasty & Freshly Made","chinchin.jpg","I want Jireh Chin Chin - Please send me price list"],
+["❄️","READY-TO-FRY SMALL CHOPS (Frozen)","₦3,500 - ₦35,000","10pcs — ₦3,500 (5 Spring Rolls + 5 Samosas)|50pcs — ₦17,500 (25 Spring Rolls + 25 Samosas)|100pcs — ₦35,000 (50 Spring Rolls + 50 Samosas)|You Can Customize To Your Desired Quantity|Just Fry At Home - Easy & Fresh","frozen.jpg","I want Ready-To-Fry Frozen Small Chops - 10pcs for N3500 / 50pcs for N17500 / 100pcs for N35000"]
 ];
-
 const ebox=document.getElementById('extraBox');
 extras.forEach(f=>{
 const list=f[3].split('|').map(i=>`<li>${i}</li>`).join('');
