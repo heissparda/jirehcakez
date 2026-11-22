@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jireh Cakez and Bakez — Uyo's No.1 Small Chops Plug</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:#FFF9F5;color:#1a1a1a}
+header{padding:10px 5%;display:flex;justify-content:space-between;align-items:center;background:white;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.logo-img{height:60px;width:auto;object-fit:contain}
+.badge{background:#A50021;color:white;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:800}
+.hero{padding:30px 5% 24px;background:#A50021;color:white;border-radius:0 0 28px 28px;text-align:center}
+.hero small{background:#FFC107;color:#111;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:800}
+.hero h1{font-size:34px;line-height:1.1;margin:14px 0 10px}
+.hero h1 span{color:#FFC107}
+.hero p{color:#FFE8E8;line-height:1.5;margin-bottom:16px}
+.btn{display:inline-block;background:#FFC107;color:#111;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:800}
+.btn2{display:inline-block;background:white;color:#111;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:800;margin-left:8px}
+.hero-logo{height:120px;width:auto;margin:0 auto 14px;display:block}
+.stats{display:flex;gap:10px;padding:16px 5%;justify-content:center;flex-wrap:wrap}
+.stat{background:white;border:1px solid #eee;padding:10px 14px;border-radius:14px;text-align:center}
+.stat b{font-size:18px;display:block}
+.stat span{font-size:12px;color:#777}
+h2{padding:18px 5% 10px;font-size:22px}
+.menu{padding:0 5% 10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:white;border-radius:18px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,.06);border-top:4px solid #A50021}
+.card.gold{border-top:4px solid #FFC107}
+.food{height:180px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:36px;background:#FFF0D6;overflow:hidden}
+.food img{width:100%;height:100%;object-fit:cover}
+.card h3{margin:10px 0 4px;font-size:16px}
+.card p{font-size:13px;color:#777;margin-bottom:8px;line-height:1.4}
+.card ul{list-style:none;margin:8px 0}
+.card li{font-size:13px;padding:3px 0;color:#444}
+.card li:before{content:"✔ ";color:#A50021;font-weight:800}
+.price{font-weight:900;font-size:18px;color:#A50021}
+.order{display:block;text-align:center;background:#111;color:white;padding:11px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px}
+.train{margin:10px 5% 16px;background:#A50021;color:white;padding:20px;border-radius:20px}
+.train h3{font-size:22px}
+.train p{margin:10px 0;line-height:1.5;color:#FFE8E8}
+.train ul{margin-left:18px;line-height:1.7}
+.train a{display:inline-block;background:#FFC107;color:#111;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:800;margin-top:12px}
+.why{padding:0 5% 16px;display:grid;gap:12px}
+.box{background:white;padding:16px;border-radius:16px;border-left:4px solid #FFC107}
+.box b{font-size:16px}
+.box p{color:#666;font-size:14px;margin-top:6px;line-height:1.5}
+.review{margin:0 5% 18px;background:#FFF3E0;padding:18px;border-radius:18px}
+.review p{margin-top:8px;line-height:1.5}
+.loc{margin:0 5% 18px;background:white;padding:18px;border-radius:18px}
+.loc p{color:#666;margin-top:6px;line-height:1.6}
+footer{text-align:center;padding:20px;color:#999;font-size:12px;padding-bottom:30px}
+.float{position:fixed;bottom:18px;right:18px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+<header>
+<img src="logo.png" alt="Jireh Cakez and Bakez Logo" class="logo-img">
+<div class="badge">Uyo • Since 2018</div>
+</header>
+<div class="hero">
+<img src="logo.png" alt="Jireh Cakez and Bakez" class="hero-logo">
+<small>⭐ 50,000+ Small Chops Delivered</small>
+<h1>Uyo's No.1<br><span>Small Chops Plug.</span></h1>
+<p>Fried Small Chops. Crispy. Delicious. Unforgettable. Order on WhatsApp in 30 seconds.</p>
+<a class="btn" href="https://wa.me/2348035620479?text=Hi%20Jireh%20Cakez,%20I%20want%20to%20order">Order on WhatsApp</a>
+<a class="btn2" href="#train">Join Training ↓</a>
+</div>
+<div class="stats">
+<div class="stat"><b>1,800+</b><span>Happy Clients</span></div>
+<div class="stat"><b>1,450+</b><span>Students Trained</span></div>
+<div class="stat"><b>4.9 ⭐</b><span>120+ Reviews</span></div>
+</div>
+<h2>Our Packages — Perfect For All Occasions</h2>
+<div class="menu" id="menuBox"></div>
+
+<h2>Party Packs & Extras — For Bulk Orders</h2>
+<div class="menu" id="extraBox"></div>
+
+<div class="train" id="train">
+<h3>🎓 Learn & Earn With Jireh</h3>
+<p>We have trained 1,300+ online students and 150 in-person students. You can learn too and start your own baking business.</p>
+<ul>
+<li>Cakes Masterclass — Birthday, Wedding, Fondant</li>
+<li>Small Chops Training — Puff puff, Samosa, Spring roll</li>
+<li>Pastries & Surprise Packages</li>
+<li>Certificate + Support Group After Training</li>
+</ul>
+<p><b>Next Batch: Open Now — Limited Slots</b></p>
+<a href="https://wa.me/2348035620479?text=Hi%20Jireh,%20I%20want%20to%20join%20the%20baking%20training">Join Training on WhatsApp →</a>
+</div>
+<h2>Why Uyo Loves Jireh</h2>
+<div class="why">
+<div class="box"><b>🔥 Fresh Every Day</b><p>No yesterday food. We fry and bake on order. Your small chops reach you hot.</p></div>
+<div class="box"><b>🎉 Parties & Surprises</b><p>Birthday, wedding, church event? We do bulk small chops + cakes + surprise delivery in Uyo.</p></div>
+<div class="box"><b>🛵 Fast Delivery</b><p>Dispatch 12PM - 4PM daily. Delivery across Uyo. Order before 11AM for same-day.</p></div>
+</div>
+<div class="review">
+<b>⭐⭐⭐⭐⭐ 4.9 — Loved by Uyo</b>
+<p>"My small chops for my sister's birthday finished in 10 minutes. Everybody was asking where I bought it. Jireh is the best!" — Happy Customer, Uyo</p>
+</div>
+<div class="loc">
+<b>📍 Find Us</b>
+<p>54 Church Road, Off Calabar Itu Road, Uyo, Akwa Ibom State<br>📞 Call / WhatsApp: 0803 562 0479<br>⏰ Mon - Sat: 8AM - 6PM • Dispatch: 12PM - 4PM</p>
+<p><b>Tasty Small Chops - Big Memories! Jireh got you!</b></p>
+<a href="https://wa.me/2348035620479?text=Hi%20Jireh,%20I%20want%20directions%20to%20your%20shop" style="display:inline-block;margin-top:10px;background:#111;color:white;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700">Get Directions on WhatsApp</a>
+</div>
+<footer>© 2026 Jireh Cakez and Bakez, Uyo • Built by DavoCraft</footer>
+<a class="float" href="https://wa.me/2348035620479?text=Hi%20Jireh,%20I%20want%20to%20order%20small%20chops">💬 Order Now</a>
+<script>
+const foods=[
+["🥟","MINI CRUNCH BOX","₦6,500","2 Samosa|2 Spring Rolls|10 Puff Puff|1 Chicken Cut|Sauce","box6500.jpg"],
+["🥟","CLASSIC DELIGHT BOX","₦8,500","3 Samosa|3 Spring Rolls|10 Puff Puff|2 Peppered Chicken|Peppered Sauce","box8500.jpg"],
+["🎉","FAMILY LITE PARTY BOX","₦13,500","4 Samosa|4 Spring Rolls|15 Puff Puff|5 Mosa|3 Peppered Chicken|Peppered Sauce","box13500.jpg"],
+["🎉","CELEBRATION FEAST BOX","₦18,000","6 Samosa|6 Spring Rolls|20 Puff Puff|3 Moneybags|2 Peppered Chicken|Peppered Sauce","box18000.jpg"],
+["👑","PARTY EXECUTIVE BOX","₦25,500","10 Samosa|10 Spring Rolls|25 Puff Puff|10 Mosa|4 Peppered Chicken|2 Moneybags|Sauce","box25500.jpg"],
+["👑","ROYAL EXECUTIVE BOX","₦32,000","12 Samosas|12 Spring Rolls|25 Puff Puff|15 Mosas|3 Money Bags|5 Peppered Chicken|5 Peppered Gizzards|Sauce","box32000.jpg"],
+["👑","ROYAL SUPREME PARTY BOX","₦40,000","15 Samosa|15 Spring Rolls|50 Puff Puff|20 Mosa|3 Moneybags|5 Peppered Chicken|5 Peppered Gizzards|Sauce","box40000.jpg"],
+["👑","ELITE MEGA PARTY CRATE","₦55,000","20 Samosa|20 Spring Rolls|50 Puff Puff|25 Mosa|5 Moneybags|7 Peppered Chicken|7 Peppered Gizzards|Sauce","box55000.jpg"]
+];
+const box=document.getElementById('menuBox');
+foods.forEach(f=>{
+const list=f[3].split('|').map(i=>`<li>${i}</li>`).join('');
+const foodDisplay = `<img src="${f[4]}" alt="${f[1]}" onerror="this.parentElement.innerHTML='${f[0]}'">`;
+box.innerHTML+=`<div class="card"><div class="food">${foodDisplay}</div><h3>${f[1]}</h3><div class="price">${f[2]}</div><ul>${list}</ul><a class="order" href="https://wa.me/2348035620479?text=I%20want%20${encodeURIComponent(f[1])}%20for%20${encodeURIComponent(f[2])}%20-%20Jireh%20Cakez">Order This →</a></div>`
+});
+const extras=[
+["🍗","PARTY PACK - WITH CHICKEN","₦3,000 per plate","Minimum Order: 10 Plates|Small Chops Plate with Peppered Chicken|Perfect for Parties, Church & Events","party3000.jpg","I want Party Pack with Chicken for N3000 per plate - Min 10 plates"],
+["🥩","PARTY PACK - WITH BEEF","₦2,000 per plate","Minimum Order: 10 Plates|Small Chops Plate with Beef|Perfect for Parties, Church & Events","party2000.jpg","I want Party Pack with Beef for N2000 per plate - Min 10 plates"],
+["🍩","BOX OF 100 MILKY PUFF PUFF","₦13,000","100 Balls Milky Puff Puff|Soft, Milky & Sweet|Perfect for Parties & Sharing","puff13000.jpg","I want Box of 100 Milky Puff Puff for N13000"]
+];
+
+const ebox=document.getElementById('extraBox');
+extras.forEach(f=>{
+const list=f[3].split('|').map(i=>`<li>${i}</li>`).join('');
+const foodDisplay = `<img src="${f[4]}" alt="${f[1]}" onerror="this.parentElement.innerHTML='${f[0]}'">`;
+ebox.innerHTML+=`<div class="card gold"><div class="food">${foodDisplay}</div><h3>${f[1]}</h3><div class="price">${f[2]}</div><ul>${list}</ul><a class="order" href="https://wa.me/2348035620479?text=${encodeURIComponent(f[5])}">Order This →</a></div>`
+});
+</script>
+</body>
+</html>

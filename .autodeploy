@@ -1,0 +1,2 @@
+#!/bin/bash
+cp -r /home/jirehca1/jirehcakez/* /home/jirehca1/public_html/
