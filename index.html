@@ -16,7 +16,6 @@ header{padding:10px 5%;display:flex;justify-content:space-between;align-items:ce
 .hero h1 span{color:#FFC107}
 .hero p{color:#FFE8E8;line-height:1.5;margin-bottom:16px}
 .btn{display:inline-block;background:#FFC107;color:#111;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:800}
-.btn2{display:inline-block;background:white;color:#111;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:800;margin-left:8px}
 .hero-logo{height:120px;width:auto;margin:0 auto 14px;display:block}
 .stats{display:flex;gap:10px;padding:16px 5%;justify-content:center;flex-wrap:wrap}
 .stat{background:white;border:1px solid #eee;padding:10px 14px;border-radius:14px;text-align:center}
@@ -35,11 +34,6 @@ h2{padding:18px 5% 10px;font-size:22px}
 .card li:before{content:"✔ ";color:#A50021;font-weight:800}
 .price{font-weight:900;font-size:18px;color:#A50021}
 .order{display:block;text-align:center;background:#111;color:white;padding:11px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px}
-.train{margin:10px 5% 16px;background:#A50021;color:white;padding:20px;border-radius:20px}
-.train h3{font-size:22px}
-.train p{margin:10px 0;line-height:1.5;color:#FFE8E8}
-.train ul{margin-left:18px;line-height:1.7}
-.train a{display:inline-block;background:#FFC107;color:#111;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:800;margin-top:12px}
 .why{padding:0 5% 16px;display:grid;gap:12px}
 .box{background:white;padding:16px;border-radius:16px;border-left:4px solid #FFC107}
 .box b{font-size:16px}
@@ -63,29 +57,15 @@ footer{text-align:center;padding:20px;color:#999;font-size:12px;padding-bottom:3
 <h1>Uyo's No.1<br><span>Small Chops Plug.</span></h1>
 <p>Fried Small Chops. Crispy. Delicious. Unforgettable. Order on WhatsApp in 30 seconds.</p>
 <a class="btn" href="https://wa.me/2348035620479?text=Hi%20Jireh%20Cakez,%20I%20want%20to%20order">Order on WhatsApp</a>
-<a class="btn2" href="#train">Join Training ↓</a>
 </div>
 <div class="stats">
 <div class="stat"><b>1,800+</b><span>Happy Clients</span></div>
-<div class="stat"><b>1,450+</b><span>Students Trained</span></div>
 <div class="stat"><b>4.9 ⭐</b><span>120+ Reviews</span></div>
 </div>
 <h2>Our Packages — Perfect For All Occasions</h2>
 <div class="menu" id="menuBox"></div>
 <h2>Party Packs & Extras — For Bulk Orders</h2>
 <div class="menu" id="extraBox"></div>
-<div class="train" id="train">
-<h3>🎓 Learn & Earn With Jireh</h3>
-<p>We have trained 1,300+ online students and 150 in-person students. You can learn too and start your own baking business.</p>
-<ul>
-<li>Cakes Masterclass — Birthday, Wedding, Fondant</li>
-<li>Small Chops Training — Puff puff, Samosa, Spring roll</li>
-<li>Pastries & Surprise Packages</li>
-<li>Certificate + Support Group After Training</li>
-</ul>
-<p><b>Next Batch: Open Now — Limited Slots</b></p>
-<a href="https://wa.me/2348035620479?text=Hi%20Jireh,%20I%20want%20to%20join%20the%20baking%20training">Join Training on WhatsApp →</a>
-</div>
 <h2>Why Uyo Loves Jireh</h2>
 <div class="why">
 <div class="box"><b>🔥 Fresh Every Day</b><p>No yesterday food. We fry and bake on order. Your small chops reach you hot.</p></div>
@@ -106,6 +86,7 @@ footer{text-align:center;padding:20px;color:#999;font-size:12px;padding-bottom:3
 <a class="float" href="https://wa.me/2348035620479?text=Hi%20Jireh,%20I%20want%20to%20order%20small%20chops">💬 Order Now</a>
 <script>
 const foods=[
+["❄️","READY-TO-FRY SMALL CHOPS (Frozen)","₦3,500 - ₦35,000","10pcs — ₦3,500 (5 Spring Rolls + 5 Samosas)|50pcs — ₦17,500 (25 Spring Rolls + 25 Samosas)|100pcs — ₦35,000 (50 Spring Rolls + 50 Samosas)|You Can Customize To Your Desired Quantity|Just Fry At Home - Easy & Fresh","frozen.jpg"],
 ["🥟","MINI CRUNCH BOX","₦6,500","2 Samosa|2 Spring Rolls|10 Puff Puff|1 Chicken Cut|Sauce","box6500.jpg"],
 ["🥟","CLASSIC DELIGHT BOX","₦8,500","3 Samosa|3 Spring Rolls|10 Puff Puff|2 Peppered Chicken|Peppered Sauce","box8500.jpg"],
 ["🎉","FAMILY LITE PARTY BOX","₦13,500","4 Samosa|4 Spring Rolls|15 Puff Puff|5 Mosa|3 Peppered Chicken|Peppered Sauce","box13500.jpg"],
@@ -126,8 +107,7 @@ const extras=[
 ["🥩","PARTY PACK - WITH BEEF","₦2,000 per plate","Minimum Order: 10 Plates|Small Chops Plate with Beef|Perfect for Parties, Church & Events","party2000.jpg","I want Party Pack with Beef for N2000 per plate - Min 10 plates"],
 ["🍩","BOX OF 100 MILKY PUFF PUFF","₦13,000","100 Balls Milky Puff Puff|Soft, Milky & Sweet|Perfect for Parties & Sharing","puff13000.jpg","I want Box of 100 Milky Puff Puff for N13000"],
 ["🧃","JIREH FRUITY ZOBO","₦600 - ₦1,000","35cl — ₦600|50cl — ₦1,000|Fresh, Natural & Refreshing|Fruity Zobo, Perfect With Small Chops","zobo.jpg","I want Jireh Fruity Zobo - 35cl for N600 or 50cl for N1000"],
-["🍪","JIREH CHIN CHIN","₦2,500 - ₦25,000","4L Bucket — ₦25,000|2L Bucket — ₦12,800|1L Jar — ₦6,500|Medium Pouch — ₦3,700|Small Pouch — ₦2,500|Crunchy, Tasty & Freshly Made","chinchin.jpg","I want Jireh Chin Chin - Please send me price list"],
-["❄️","READY-TO-FRY SMALL CHOPS (Frozen)","₦3,500 - ₦35,000","10pcs — ₦3,500 (5 Spring Rolls + 5 Samosas)|50pcs — ₦17,500 (25 Spring Rolls + 25 Samosas)|100pcs — ₦35,000 (50 Spring Rolls + 50 Samosas)|You Can Customize To Your Desired Quantity|Just Fry At Home - Easy & Fresh","frozen.jpg","I want Ready-To-Fry Frozen Small Chops - 10pcs for N3500 / 50pcs for N17500 / 100pcs for N35000"]
+["🍪","JIREH CHIN CHIN","₦2,500 - ₦25,000","4L Bucket — ₦25,000|2L Bucket — ₦12,800|1L Jar — ₦6,500|Medium Pouch — ₦3,700|Small Pouch — ₦2,500|Crunchy, Tasty & Freshly Made","chinchin.jpg","I want Jireh Chin Chin - Please send me price list"]
 ];
 const ebox=document.getElementById('extraBox');
 extras.forEach(f=>{
